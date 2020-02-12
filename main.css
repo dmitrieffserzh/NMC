@@ -30,13 +30,28 @@ body {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
+/* line 32, main.scss */
+.menu-button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+/* line 37, main.scss */
+.menu-button__line {
+  display: block;
+  margin: 2px 0;
+  height: 1px;
+  background: #202020;
+}
+
 /* MAIN
 ===================================================================================================================== */
 /* FOOTER
 ===================================================================================================================== */
 /* FLEX GRID
 ===================================================================================================================== */
-/* line 39, main.scss */
+/* line 51, main.scss */
 .container {
   -webkit-flex: 1;
   flex: 1;
@@ -44,7 +59,7 @@ body {
   margin: 0 auto;
   max-width: calc(1280px - 1rem);
 }
-/* line 45, main.scss */
+/* line 57, main.scss */
 .container__row {
   -webkit-flex: 1;
   flex: 1;
