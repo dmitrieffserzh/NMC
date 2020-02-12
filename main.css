@@ -1,0 +1,56 @@
+/* line 6, main.scss */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* line 14, main.scss */
+body {
+  padding: 51px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #202020;
+}
+
+/* HEADER
+===================================================================================================================== */
+/* line 23, main.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 1rem 0;
+  -moz-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+/* MAIN
+===================================================================================================================== */
+/* FOOTER
+===================================================================================================================== */
+/* FLEX GRID
+===================================================================================================================== */
+/* line 39, main.scss */
+.container {
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: calc(1280px - 1rem);
+}
+/* line 45, main.scss */
+.container__row {
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 -1rem;
+  width: calc(100% + 1rem);
+}
