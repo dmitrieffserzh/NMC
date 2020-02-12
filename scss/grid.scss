@@ -1,96 +1,3 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-html {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-html {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  text-rendering: geometricPrecision;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #a2a2a2;
-  line-height: 1.4rem;
-  height: 100%;
-  width: 100%;
-  background: #1d1f27;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-/* HEADER
-===================================================================================================================== */
-/* MAIN
-===================================================================================================================== */
-/* FOOTER
-===================================================================================================================== */
-/* FLEX GRID
-===================================================================================================================== */
 :root {
   --gutter-width: 1rem;
   --outer-margin: 2rem;
@@ -100,10 +7,10 @@ body {
   --sm-min: 48;
   --md-min: 64;
   --lg-min: 75;
-  --screen-xs-min: var(--xs-min) em;
-  --screen-sm-min: var(--sm-min) em;
-  --screen-md-min: var(--md-min) em;
-  --screen-lg-min: var(--lg-min) em;
+  --screen-xs-min: var(--xs-min)em;
+  --screen-sm-min: var(--sm-min)em;
+  --screen-md-min: var(--md-min)em;
+  --screen-lg-min: var(--lg-min)em;
   --container-sm: calc(var(--sm-min) + var(--gutter-width));
   --container-md: calc(var(--md-min) + var(--gutter-width));
   --container-lg: calc(var(--lg-min) + var(--gutter-width));
@@ -112,6 +19,7 @@ body {
 @custom-media --sm-viewport only screen and (min-width: 48em);
 @custom-media --md-viewport only screen and (min-width: 64em);
 @custom-media --lg-viewport only screen and (min-width: 75em);
+
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
@@ -520,6 +428,7 @@ body {
     order: 1;
   }
 }
+
 @media (--md-viewport) {
   .container {
     width: var(--container-md, 61rem);
@@ -714,6 +623,7 @@ body {
     order: 1;
   }
 }
+
 @media (--lg-viewport) {
   .container {
     width: var(--container-lg, 71rem);
@@ -908,3 +818,4 @@ body {
     order: 1;
   }
 }
+
